@@ -1,0 +1,116 @@
+.firstmodal {
+    position: absolute;
+    height: 357px;
+    width: 251px;
+    background-color: rgb(134,211,244);
+    bottom: 50%;
+    top: 25%;
+    right: 0;
+    animation: slideInFromRight 0.5s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.firstmodal_overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 357px;
+    gap: 1rem;
+}
+
+.firstmodal h2 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.firstmodal p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.firstmodal img {
+    height: 120px;
+    width: 120px;
+}
+
+.firstmodal_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.8rem;
+    max-width: 180px;
+}
+
+.firstmodal_text h2{
+    font-size: 13px;
+
+}
+
+
+.firstmodal button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 155px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: 1px solid black;
+&:hover{
+    opacity: 0.9;
+    border: 1px solid yellow;
+}}
+
+.close_button {
+    position: absolute;
+    background-color: white;
+    height: 40px;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1%;
+    top: 1%;
+    cursor: pointer;
+    border: none;
+}
+
+.close_button::before,
+.close_button::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: black;
+    transition: all 0.2s ease-in;
+}
+
+.close_button::before {
+    transform: rotate(90deg);
+}
+
+.close_button::after {
+    transform: rotate(-90deg);
+}
+
+.close_button:hover::before {
+    transform: rotate(45deg);
+}
+
+.close_button:hover::after {
+    transform: rotate(-45deg);
+}

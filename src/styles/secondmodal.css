@@ -1,0 +1,208 @@
+.secondmodal {
+    position: absolute;
+    width: 400px;
+    background-color: rgb(134,211,244);
+    bottom: 50%;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    height: 100vh;
+    transform: translate(0);
+    animation: slideOutToRight 0.3s ease-in forwards;
+}
+
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.secondmodal_overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 357px;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.number {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.secondmodal p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.number_input_section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.number_input_section_part {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+}
+
+.number_input_section_part button {
+    background-color: transparent;
+    border: 2px solid black;
+    height: 55px;
+    width: 80px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+&:hover{
+    background-color: black;
+    color: white;
+}}
+
+.number_input_checkbox {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.number_input_checkbox .selected {
+    box-shadow: 4px 8px rgb(14, 13, 13);
+}
+
+.checkedinput {
+    background-color: transparent;
+    padding: 8px;
+    appearance: none; 
+    border: 2px solid black;
+    cursor: pointer;
+    height: 50px;
+    width: 55px;
+    transition: all 0.2s ease-in;
+&:hover{
+    opacity: 0.8;
+}}
+
+.checkedinput:checked::before {
+    content: '✔';
+    font-size: 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+}
+
+.number_input_checkbox span {
+    color: #5c656a; 
+}
+
+.confirm_but {
+    width: 250px;
+    height: 60px;
+    background-color: black;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+&:hover{
+    opacity: 0.8;
+}}
+
+.confirm_but_enable {
+    width: 250px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid rgb(90, 85, 85);
+    color: grey;
+    cursor: not-allowed;
+    transition: all 0.2s ease-in;
+}
+
+.number_input_section_last {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.selected_but {
+    box-shadow: 6px 6px black;
+}
+
+.number_input_section_last .selected {
+    background-color: black;
+    color: white;
+}
+
+.clear {
+    width: 170px;
+    padding: 18px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+&:hover{
+    background-color: black;
+    color: white;
+}}
+
+.button_0 {
+    background-color: transparent;
+    border: 2px solid black;
+    height: 55px;
+    width: 80px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+&:hover{
+    background-color: black;
+    color: white;
+}}
+
+.number_input_section_part .selected {
+    background-color: black;
+    color: white;
+}
+
+.button_0 .selected {
+    background-color: black;
+    color: white;
+}
+
+.active {
+    border: 2px solid yellow;
+    background-color: red;
+}
+
+.wrong {
+    color: red;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.number_wrong {
+    font-size: 27px;
+    font-weight: bold;
+    color: red;
+}
+
+.approve_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.approve_p {
+    font-size: 15px;
+}
+
+.approve {
+    font-size: 27px;
+}
